@@ -8,14 +8,14 @@ var bot = linebot({
 
 
 bot.on('message', function(event) {
-  console.log(event); //§â¦¬¨ì°T®§ªº event ¦L¥X¨Ó¬İ¬İ
+  console.log('123456789'); //æŠŠæ”¶åˆ°è¨Šæ¯çš„ event å°å‡ºä¾†çœ‹çœ‹
 });
 
 const app = express();
 const linebotParser = bot.parser();
 app.post('/', linebotParser);
 
-//¦]¬° express ¹w³]¨« port 3000¡A¦Ó heroku ¤W¹w³]«o¤£¬O¡A­n³z¹L¤U¦Cµ{¦¡Âà´«
+//å› ç‚º express é è¨­èµ° port 3000ï¼Œè€Œ heroku ä¸Šé è¨­å»ä¸æ˜¯ï¼Œè¦é€éä¸‹åˆ—ç¨‹å¼è½‰æ›
 var server = app.listen(process.env.PORT || 8080, function() {
   var port = server.address().port;
   console.log("App now running on port", port);
